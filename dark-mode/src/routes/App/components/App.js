@@ -3,6 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import '../styles/_app.scss';
 
+/**
+ * Explanation:
+ * I added a mode field in the state of the app that toggles between 'light' and 'dark'
+ * I then included a renderButton() method that renders a different button (sun/moon) based on
+ * the state of the app. 
+ * If you toggle to dark mode, I use vanilla JS to add the 'dark-mode' class to the root div with 
+ * id 'app-wrapper'. And subsequently, I remove the class 'dark-mode' when in light mode. 
+ */
 export default class App extends React.Component {
   constructor() {
     super()

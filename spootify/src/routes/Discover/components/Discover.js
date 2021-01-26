@@ -3,6 +3,13 @@ import DiscoverBlock from './DiscoverBlock/components/DiscoverBlock';
 import '../styles/_discover.scss';
 import makeRequest from '../api/makeRequest.js'
 
+/**
+ * Explanation:
+ * I added an isLoaded field in the state in order to wait for the data to fully load from the API. 
+ * Additionally, I implemented an asynchronous componentDidMount built in method where I make API calls
+ * via the makeRequest.js function. I update the appropriate state field with the respective data from the 
+ * promises. 
+ */
 export default class Discover extends Component {
   constructor() {
     super();
